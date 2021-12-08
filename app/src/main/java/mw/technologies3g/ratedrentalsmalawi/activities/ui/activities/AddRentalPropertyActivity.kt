@@ -64,7 +64,7 @@ class AddRentalPropertyActivity : BaseActivity(), View.OnClickListener{
         //var adRequest = AdRequest.Builder().build()
         //adView.loadAd(adRequest)
 
-        //ca-app-pub-6191520906678503/1943864454
+
         //Interstitial Ads
         var adRequest = AdRequest.Builder().build()
         InterstitialAd.load(this,"ca-app-pub-3940256099942544/1033173712", adRequest, object : InterstitialAdLoadCallback() {

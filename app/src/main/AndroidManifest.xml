@@ -13,9 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RatedRentalsMalawi">
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6191520906678503~1220674255" />
+       //TODO add metadata
 
         <activity
             android:name=".activities.ui.activities.RefreshPageInstructionActivity"
