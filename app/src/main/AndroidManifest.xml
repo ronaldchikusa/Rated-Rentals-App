@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
-    //TODO-- PUT METADATA BACK
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/final_rated_rentals_icon"
@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RatedRentalsMalawi">
 
-
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6191520906678503~1220674255" />
 
         <activity
             android:name=".activities.ui.activities.RefreshPageInstructionActivity"
