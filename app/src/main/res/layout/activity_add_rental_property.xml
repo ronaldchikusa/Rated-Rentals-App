@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.AddRentalPropertyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_property_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bottom_nav_background_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title_add_property"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/title_add_rental_property"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_property_activity"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/fl_property_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_product_header_image_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/iv_main_property_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/imageImageViewBackground"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_add_update_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="100dp"
+                    android:src="@drawable/ic_baseline_add_a_photo_24" />
+
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_hint_property_title"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fl_property_image">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/edit_text_property_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_price"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_hint_product_price"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_title">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_district"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_hint_property_district"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_price">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_area_location"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_property_area_location"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_district">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_number_of_garages"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_property_garage_number"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_area_location">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_garage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_number_of_bathrooms"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_property_bathrooms_number"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_number_of_garages">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_bathrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_number_of_bedrooms"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_text_property_bedroom_number"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_number_of_bathrooms">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_bedrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rg_furniture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_radio_button_height"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/til_property_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_property_number_of_bedrooms">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RRRadioButton
+                    android:id="@+id/rb_not_furnished"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/profile_radio_button_marginStartEnd"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_tab_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/radio_button_label_not_furnished"
+                    android:textColor="@drawable/gender_tab_text_color_selector"
+                    android:textStyle="bold" />
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RRRadioButton
+                    android:id="@+id/rb_partial_furnished"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/profile_radio_button_marginStartEnd"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_tab_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/radio_button_label_partial_furnished"
+                    android:textColor="@drawable/gender_tab_text_color_selector"
+                    android:textStyle="bold" />
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RRRadioButton
+                    android:id="@+id/rb_fully_furnished"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/profile_radio_button_marginStartEnd"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_tab_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/radio_button_label_fully_furnished"
+                    android:textColor="@drawable/gender_tab_text_color_selector"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/et_hint_property_description"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rg_furniture">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="3"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+               android:id="@+id/this_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               app:layout_constraintBottom_toTopOf="@+id/til_property_contact_hours"
+               app:layout_constraintTop_toBottomOf="@+id/til_property_description">
+
+               <com.hbb20.CountryCodePicker
+                   android:id="@+id/country_Code"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="16dp"
+                   app:ccp_defaultNameCode="MW" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_contact_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/et_hint_property_contact_number"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_description">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_contact_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_contact_hours"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/enter_contact_hours_time_frame"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/this_layout">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_contact_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="2"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_property_contact_email_address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/enter_email_address_optional"
+                android:textColorHint="@color/hints_on_add_pp_page_now"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_property_contact_hours">
+
+                <mw.technologies3g.ratedrentalsmalawi.utils.RREditText
+                    android:id="@+id/et_property_contact_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColorHint="@color/colorPrimaryText"
+                    android:textSize="@dimen/edit_text_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/text_view_add_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="@string/add_images"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/fl_property_image2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_property_contact_email_address" />
+
+            <FrameLayout
+                android:id="@+id/fl_property_image2"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/add_product_header_image_height"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_add_more">
+
+
+                <ImageView
+                    android:id="@+id/iv_property_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/imageImageViewBackground"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_add_update_property2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="100dp"
+                    android:src="@drawable/ic_baseline_add_a_photo_24" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_property_image3"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/add_product_header_image_height"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fl_property_image2">
+
+
+                <ImageView
+                    android:id="@+id/iv_property_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/imageImageViewBackground"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_add_update_property3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="100dp"
+                    android:src="@drawable/ic_baseline_add_a_photo_24" />
+            </FrameLayout>
+
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRButton
+                android:id="@+id/btn_upload_add_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lbl_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_textSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fl_property_image3" />
+
+           <!-- <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                ads:adSize = "BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+                ads:layout_constraintTop_toBottomOf="@+id/btn_upload_add_prod"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintEnd_toEndOf="parent">
+            </com.google.android.gms.ads.AdView>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

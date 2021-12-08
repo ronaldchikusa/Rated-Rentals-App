@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/my_property_item_my_prop_margin"
+    android:background="@drawable/user_properties_layout_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/my_property_item_dashboard_padding">
+
+    <ImageView
+        android:id="@+id/iv_property_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_property_item_dashboard_image_height"
+        android:layout_marginStart="@dimen/my_property_item_dashboard_margin"
+        android:layout_marginTop="@dimen/my_property_item_dashboard_margin"
+        android:layout_marginEnd="@dimen/my_property_item_dashboard_margin"
+        android:layout_marginBottom="@dimen/my_property_item_dashboard_margin"
+        android:background="@color/imageImageViewBackground"
+        android:contentDescription="@string/content_description"
+        android:minHeight="@dimen/my_property_image_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_screen" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@id/iv_property_item_image"
+        android:background="@color/dark_blue" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_properties_item_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider"
+        android:layout_marginEnd="@dimen/my_property_marginEnd_Item_Layout"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/my_property_padding_StartEnd"
+        android:paddingTop="@dimen/my_property_padding_TopBottom"
+        android:paddingEnd="@dimen/my_property_item_padding_my_property_StartEnd"
+        android:paddingBottom="@dimen/my_property_item_padding_TopBottom">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/tv_my_property_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            tools:text="Property Title" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/tv_my_property_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_property_item_price_marginTop"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/my_property_item_textSize"
+                android:textStyle="bold"
+                tools:text="K350000.00" />
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/tv_per_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/per_month_marginStart"
+                android:layout_marginTop="@dimen/my_property_item_price_marginTop"
+                android:text="@string/per_month"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/my_property_item_textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_delete_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view_divider"
+        android:layout_marginStart="-48dp"
+        android:layout_toEndOf="@+id/ll_my_properties_item_details"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content_description"
+        android:foreground="?attr/selectableItemBackground"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="@dimen/delete_icon_padding"
+        android:src="@drawable/ic_vector_delete" />
+
+
+
+
+
+</RelativeLayout>

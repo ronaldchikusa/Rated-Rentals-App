@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.ViewRentalPropertyInstructionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_view_property_instruction_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bottom_nav_background_gradient"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/txt_view_add_property_instruction_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/view_inst_toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/how_to_view_property_instruction_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/register_toolbar_title_textSize" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/first_step_view_prop_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="75dp"
+        android:gravity="start"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/first_step_view_prop_inst"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_view_property_instruction_activity" />
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/second_step_view_prop_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="135dp"
+        android:gravity="start"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/second_step_view_prop_inst"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_step_view_prop_inst" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_rental_properties_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        ads:adSize = "BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintTop_toBottomOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

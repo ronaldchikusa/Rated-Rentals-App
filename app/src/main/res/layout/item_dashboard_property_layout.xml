@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/my_property_item_dashboard_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/my_property_item_dashboard_margin"
+    android:background="@drawable/user_properties_layout_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_dashboard_property_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_property_item_dashboard_image_height"
+        android:layout_marginStart="@dimen/my_property_item_dashboard_margin"
+        android:layout_marginTop="@dimen/my_property_item_dashboard_margin"
+        android:layout_marginEnd="@dimen/my_property_item_dashboard_margin"
+        android:layout_marginBottom="@dimen/my_property_item_dashboard_margin"
+        android:background="@color/imageImageViewBackground"
+        android:contentDescription="@string/content_description"
+        android:minHeight="@dimen/my_property_item_dashboard_image_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_screen" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@id/iv_dashboard_property_item_image"
+        android:background="@color/dark_blue" />
+
+    <LinearLayout
+        android:id="@+id/ll_dashboard_item_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/my_property_padding_StartEnd"
+        android:paddingTop="@dimen/my_property_padding_TopBottom"
+        android:paddingEnd="@dimen/my_property_item_padding_StartEnd"
+        android:paddingBottom="@dimen/my_property_item_padding_TopBottom">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/tv_dashboard_property_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_value_text_color"
+                android:textSize="@dimen/my_property_item_price_title_textSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_dashboard_property_item_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_dashboard_property_item_price"
+                tools:text="Item Name" />
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/tv_dashboard_property_item_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/my_property_item_price_textSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dashboard_property_item_title"
+                tools:text="K100,000.00" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dashboard_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_dashboard_item_details"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/my_property_padding_StartEnd"
+        android:paddingTop="@dimen/my_property_padding_TopBottom"
+        android:paddingEnd="@dimen/my_property_item_padding_StartEnd"
+        android:paddingBottom="@dimen/my_property_item_padding_TopBottom">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_baseline_location_on_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dashboard_property_area"
+                app:layout_constraintBottom_toBottomOf="@+id/dashboard_property_area"
+               />
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/dashboard_property_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toEndOf="@+id/icon_location"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/item_value_text_color"
+                android:textSize="@dimen/my_property_item_textSize"
+                android:textStyle="bold"
+                tools:text="Area 49" />
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+                android:id="@+id/comma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comma"
+                android:textSize="@dimen/my_property_item_textSize"
+                app:layout_constraintStart_toEndOf="@id/dashboard_property_area"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+                android:id="@+id/dashboard_property_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toEndOf="@+id/comma"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/item_value_text_color"
+                android:textSize="@dimen/my_property_item_textSize"
+                android:textStyle="bold"
+                tools:text="Lilongwe" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dashboard_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_dashboard_location"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/my_property_padding_StartEnd"
+        android:paddingTop="2dp"
+        android:paddingEnd="@dimen/my_property_item_padding_StartEnd"
+        android:paddingBottom="@dimen/my_property_item_padding_TopBottom">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_number_of_bedrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/icon_location"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="5" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_property_bedroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/Bedrooms"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_number_of_bedrooms"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:text="@string/demarcation"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_property_bedroom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_number_of_bathrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_divider"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="5" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_property_bath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/Bath"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/icon_location"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_second_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:text="@string/demarcation"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/icon_location"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_number_of_garage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_second_divider"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="5" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/dashboard_number_of_garages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/Garage"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/my_property_item_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_number_of_garage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

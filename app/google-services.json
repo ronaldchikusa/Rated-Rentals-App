@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "464018782265",
+    "project_id": "rated-rentals-malawi",
+    "storage_bucket": "rated-rentals-malawi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464018782265:android:0020db3966b5a5da03f5e8",
+        "android_client_info": {
+          "package_name": "mw.technologies3g.ratedrentalsmalawi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464018782265-gmmkk1dbk7guq4v8gl2kquve1ep6788a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mw.technologies3g.ratedrentalsmalawi",
+            "certificate_hash": "7afeb156bf20009796cea28d0cbcc8a2199c6f89"
+          }
+        },
+        {
+          "client_id": "464018782265-reg40uc9prlcsnaj46g3d74vn5fsk60v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGnKz5Xwchmi03NeR1UZvfJHCxDttO_bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464018782265-reg40uc9prlcsnaj46g3d74vn5fsk60v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

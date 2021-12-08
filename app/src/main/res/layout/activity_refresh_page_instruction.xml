@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.RefreshPageInstructionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_how_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bottom_nav_background_gradient"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/txt_view_contact_property_instruction_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/contact_toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/how_to_refresh_page_act_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/register_toolbar_title_textSize" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/first_step_contact_prop_owner_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/refresh"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_how_to_refresh" />
+
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/second_step_contact_prop_owner_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/tl_dr"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_step_contact_prop_owner_inst" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

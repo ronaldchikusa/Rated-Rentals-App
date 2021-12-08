@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Splash Screen Dimensions
+    <dimen name="Splash_Title_Text_Size">35sp</dimen>
+
+    //Button Dimensions and Bottom nav
+    <dimen name="button_background_radius">40dp</dimen>
+    <dimen name="bottom_nav_background_radius">0dp</dimen>
+
+    //Login Page Dimensions
+    <dimen name="welcome_intro_dimens">30sp</dimen>
+    <dimen name="edit_text_textSize">16sp</dimen>
+    <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="clickable_text_view_padding">5dp</dimen>
+    <dimen name="forgot_password_textSize">14sp</dimen>
+    <dimen name="btn_padding">8dp</dimen>
+    <dimen name="btn_textSize">18sp</dimen>
+    <dimen name="login_title_textSize">18sp</dimen>
+    <dimen name="text_view_textSize">16sp</dimen>
+
+    //Registration Page
+    <dimen name="register_toolbar_title_paddingStart">-25dp</dimen>
+    <dimen name="register_toolbar_title_textSize">18sp</dimen>
+    <dimen name="text_terms_condition_marginStart">10dp</dimen>
+    <dimen name="text_terms_condition_textSize">14sp</dimen>
+    <dimen name="button_paddingTop_Bottom">8dp</dimen>
+
+    //Dialog Progress Bar
+    <dimen name="progress_dialog_padding">10dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_text_margin_Start">16dp</dimen>
+    <dimen name="progress_text_Size">16sp</dimen>
+
+    //Forgot Password Page
+    <dimen name="forgot_password_title_textSize">18sp</dimen>
+    <dimen name="forgot_password_title_description_textSize">16sp</dimen>
+    <dimen name="forgot_password_toolbar_title_paddingStart">-25dp</dimen>
+    <dimen name="edit_text_forgot_password_padding">18dp</dimen>
+
+    //Complete Profile Page
+    <dimen name="user_image_background_stroke">120dp</dimen>
+    <dimen name="user_image_background_corner_radius">2dp</dimen>
+    <dimen name="profile_user_image_size">150dp</dimen>
+    <dimen name="profile_user_image_marginTop">20dp</dimen>
+    <dimen name="profile_user_photo_margin">3dp</dimen>
+    <dimen name="profile_radio_button_height">40dp</dimen>
+    <dimen name="profile_radio_button_marginStartEnd">3dp</dimen>
+    <dimen name="gender_radio_button_radius">5dp</dimen>
+    <dimen name="gender_radio_button_stroke_width">1dp</dimen>
+
+    //Toolbar Dimens
+    <dimen name="general_toolbar_title_paddingStart">-25dp</dimen>
+    <dimen name="general_toolbar_title_textSize">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    //Profile Page
+    <dimen name="header_image_profile_page_height">150dp</dimen>
+    <dimen name="settings_user_image_size">100dp</dimen>
+    <dimen name="setting_user_image_start_margin">15dp</dimen>
+    <dimen name="settings_user_image_marginTop">-125dp</dimen>
+    <dimen name="settings_user_picture_margin">3dp</dimen>
+    <dimen name="grey_border_stroke_size">1dp</dimen>
+    <dimen name="grey_border_radius">2dp</dimen>
+    <dimen name="settings_edit_label_marginStartEnd">10dp</dimen>
+    <dimen name="settings_edit_label_marginTopBottom">5dp</dimen>
+    <dimen name="settings_edit_label_textSize">14sp</dimen>
+    <dimen name="settings_name_marginTop">-80dp</dimen>
+    <dimen name="settings_name_marginTop_for_edit">5dp</dimen>
+    <dimen name="settings_name_textSize">22sp</dimen>
+    <dimen name="settings_info_marginTop">3dp</dimen>
+    <dimen name="settings_name_marginStart">10dp</dimen>
+    <dimen name="setting_text_btn">3dp</dimen>
+    <dimen name="settings_lbl_addresses_textSize">18sp</dimen>
+
+    //View Profile Activity
+    <dimen name="min_text_height">48dp</dimen>
+    <dimen name="header_image_height">200dp</dimen>
+    <dimen name="toolbar_title_paddingStart">-25dp</dimen>
+    <dimen name="toolbar_title_text_size">18sp</dimen>
+    <dimen name="settings_info_textSize">18sp</dimen>
+    <dimen name="pd_name_marginTop">30dp</dimen>
+    <dimen name="add_update_product_icon_padding">16dp</dimen>
+    <dimen name="add_product_header_image_height">250dp</dimen>
+
+    //Add Property Fragment RecyclerView
+    <dimen name="no_data_found_textSize">20sp</dimen>
+
+    //Item Layout
+    <dimen name="my_property_item_textSize">18sp</dimen>
+    <dimen name="my_property_item_title_textSize">18sp</dimen>
+    <dimen name="my_property_item_price_title_textSize">20sp</dimen>
+    <dimen name="my_property_item_price_marginTop">12dp</dimen>
+    <dimen name="my_property_item_padding_TopBottom">5dp</dimen>
+    <dimen name="my_property_item_padding_StartEnd">10dp</dimen>
+    <dimen name="my_property_item_padding_my_property_StartEnd">5dp</dimen>
+    <dimen name="my_property_padding_TopBottom">5dp</dimen>
+    <dimen name="my_property_padding_StartEnd">10dp</dimen>
+    <dimen name="divider_height">3dp</dimen>
+    <dimen name="my_property_image_height">150dp</dimen>
+    <dimen name="my_property_item_dashboard_margin">8dp</dimen>
+    <dimen name="my_property_item_my_prop_margin">5dp</dimen>
+    <dimen name="my_property_item_dashboard_image_height">200dp</dimen>
+    <dimen name="my_property_item_dashboard_padding">1dp</dimen>
+    <dimen name="new_border_stroke_size">1dp</dimen>
+    <dimen name="new_border_stroke_size_my_property">3dp</dimen>
+    <dimen name="per_month_marginStart">5dp</dimen>
+    <dimen name="delete_icon_padding">5dp</dimen>
+    <dimen name="item_background_radius">5dp</dimen>
+    <dimen name="my_property_item_price_textSize">20sp</dimen>
+
+    //RecyclerView Dimensions
+    <dimen name="my_property_padding_rc">56dp</dimen>
+
+    //Property Details Dimensions
+    <dimen name="my_property_marginEnd_Item_Layout">45dp</dimen>
+    <dimen name="contact_toolbar_title_paddingStart">-20dp</dimen>
+    <dimen name="view_inst_toolbar_title_paddingStart">-15dp</dimen>
+    <dimen name="property_details_title_location_marginTop">10dp</dimen>
+    <dimen name="property_details_title_location_padding">16dp</dimen>
+    <dimen name="property_details_title_textSize">18sp</dimen>
+    <dimen name="property_details_label_margin">16dp</dimen>
+    <dimen name="product_details_label_textSize">18sp</dimen>
+    <dimen name="property_details_description_textSize">14sp</dimen>
+    <dimen name="product_details_marginEnd">16dp</dimen>
+    <dimen name="my_property_details_item_textSize">35sp</dimen>
+    <dimen name="my_property_details_item_price_textSize">18sp</dimen>
+    <dimen name="dash_divider">45sp</dimen>
+
+
+</resources>

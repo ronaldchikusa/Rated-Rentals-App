@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    //MyPersonalColors
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#1488CC</color>
+    <color name="dark_blue">#2B32B2</color>
+    <color name="color_accent">#1488CC</color>
+    <color name="colorPrimaryText">#222934</color>
+    <color name="colorThemeLightBlue">#1488CC</color>
+    <color name="colorThemeDarkBlue">#2B32B2</color>
+
+    //Register Page Colors
+    <color name="hint_color_text">#FFFFFF</color>
+    <color name="colorSecondaryText">#FFFFFF</color>
+    <color name="register_page_color">#1488CC</color>
+    <color name="register_hint_color">#222934</color>
+    
+    //Login Screen Gradient Colors
+    <color name="LightGray">#0F2027</color>
+    <color name="DarkGray">#2C5364</color>
+    <color name="ThirdColor">#203A43</color>
+    
+    //Snack Bar and Progress Bar Colors
+    <color name="colorSnackBarSuccess">#8BC34A</color>
+    <color name="colorSnackBarError">#F72400</color>
+
+    //Forgot Password Page
+    <color name="forgot_password_hint_color">#222934</color>
+    <color name="forgot_password_page_color">#1488CC</color>
+
+    //Complete profile page
+    <color name="complete_profile_hints_color">#222934</color>
+    <color name="LightGrayish">#F1F1F1</color>
+    <color name="DarkGrey">#a9a9a9</color>
+    <color name="ProfileRectangle">#1488CC</color>
+    <color name="true_blue">#0073cf</color>
+
+    //Add Rental Property Page
+    <color name="imageImageViewBackground">#E1E1E1</color>
+    <color name="hints_on_add_pp_page">#989898</color>
+    <color name="hints_on_add_pp_page_now">#1488CC</color>
+
+    //Item layout
+    <color name="item_value_text_color">#282C35</color>
+    <color name="dash_back">#FFFFF0</color>
+    <color name="vanilla">#F3E5AB</color>
+    <color name="dark_layout">#E0E0E0</color>
+    <color name="orange_white">#F8f9f5</color>
+
+    //Product Details
+    <color name="whatsapp_green">#25D366</color>
+
+    //TextView
+    <color name="purple_ting">#9966cc</color>
+
+    //Boarding
+    <color name="even_darker_blue">#00008B</color>
+    <color name="even_lighter_blue">#73C2FB</color>
+    <color name="darkest_purple">#301934</color>
+</resources>

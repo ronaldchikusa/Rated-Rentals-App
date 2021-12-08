@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.fragments.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_about_us_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:background="@drawable/bottom_nav_background_gradient"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/txt_view_about_us_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/register_toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/about_us_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/register_toolbar_title_textSize" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRButton
+        android:id="@+id/button_tcs_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_background"
+        android:text="@string/t_and_c_activity"
+        android:textColor="@color/white" />
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRButton
+        android:id="@+id/button_developers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_background"
+        android:text="@string/developer"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.RealEstateAgencyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_real_estate_agency_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bottom_nav_background_gradient"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/txt_view_real_estate_agency_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/register_toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/real_estate_agencies"
+            android:textColor="@color/white"
+            android:textSize="@dimen/register_toolbar_title_textSize" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_terms_and_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_real_estate_agency_activity">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+            android:id="@+id/featured_agency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/feature_agencies"
+            android:textColor="@color/register_hint_color"
+            android:textSize="17sp" />
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+            android:id="@+id/act_email_my_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/email_my_app"
+            android:textColor="@color/register_page_color"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

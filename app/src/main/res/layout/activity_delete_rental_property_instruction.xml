@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.DeleteRentalPropertyInstructionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_delete_prop_instruction_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bottom_nav_background_gradient"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <mw.technologies3g.ratedrentalsmalawi.utils.RRTexViewBold
+            android:id="@+id/txt_view_delete_property_instruction_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/register_toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/delete_property_instruction_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/register_toolbar_title_textSize" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/first_step_del_prop_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="75dp"
+        android:gravity="left"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/first_step_del_prop_inst"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_delete_prop_instruction_activity" />
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/second_step_del_prop_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="155dp"
+        android:gravity="left"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/second_step_del_prop_inst"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_step_del_prop_inst" />
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/third_step_del_prop_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="215dp"
+        android:gravity="left"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/third_step_del_prop_inst"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_step_del_prop_inst" />
+
+    <mw.technologies3g.ratedrentalsmalawi.utils.RRTextView
+        android:id="@+id/fourth_step_del_prop_inst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:gravity="left"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/fourth_step_del_prop_inst"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/forgot_password_title_description_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/third_step_del_prop_inst" />
+
+
+
+</RelativeLayout>

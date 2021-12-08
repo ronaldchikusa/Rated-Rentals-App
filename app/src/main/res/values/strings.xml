@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">Rated Rentals</string>
+    //Login Page
+    <string name="welcome">Welcome To \nRated Rentals</string>
+    <string name="edit_txt_email_id">Email ID</string>
+    <string name="edit_txt_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="button_login">Login</string>
+    <string name="title_login">LOGIN</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="register"><u>Register</u></string>
+
+    //Register Page
+    <string name="create_account">CREATE YOUR ACCOUNT</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_email_id">Email ID</string>
+    <string name="hint_password">Password</string>
+    <string name="edit_txt_confirm_password">Confirm Password</string>
+    <string name="agree_to_TC">I Agree To The</string>
+    <string name="ts_and_cs"><u>Terms &amp; Conditions</u></string>
+    <string name="button_label_register">Register</string>
+    <string name="existing_account">Already have an account?</string>
+    <string name="go_to_login"><u>Login</u></string>
+    <string name="register_success">Thank you for registering!</string>
+
+    //Error Messages, Snack bar messages
+    <string name="error_msg_enter_first_name">Please enter your first name.</string>
+    <string name="error_msg_enter_last_name">Please enter your last name.</string>
+    <string name="error_msg_enter_email">Please enter your email.</string>
+    <string name="error_msg_enter_password">Please enter your password.</string>
+    <string name="error_msg_password_does_not_match">Password confirmation does not match.</string>
+    <string name="error_msg_agree_terms_and_conditions">Please agree to the Terms &amp; Conditions.</string>
+    <string name="error_msg_enter_mobile_number">Please enter your phone number</string>
+    <string name="error_msg_enter_valid_email">Please enter valid Email Address</string>
+    <string name="registry_successful">Thanks for registering with Rated Rentals!</string>
+    <string name="message_profile_update_success">"Your profile has been successfully updated "</string>
+
+    //Forgot Password Page
+    <string name="title_forgot_password">FORGOT PASSWORD?</string>
+    <string name="forgot_password_title_description">Enter your username and email and we will send you a verification and reset link to your email</string>
+    <string name="button_label_submit">Submit</string>
+    <string name="email_sent_successfully">\"Email sent successfully to reset your password\"</string>
+
+    //Complete Profile Page
+    <string name="title_complete_profile">COMPLETE YOUR PROFILE</string>
+    <string name="edit_txt_hint_mobile_number">Mobile Number</string>
+    <string name="radio_button_label_male">MALE</string>
+    <string name="radio_button_label_female">FEMALE</string>
+    <string name="button_label_save">Save</string>
+    <string name="content_description">image</string>
+
+    //Permission Strings (includes errors)
+    <string name="read_storage_permission_denied">Read storage permission denied, you can allow it from your phone settings</string>
+    <string name="image_selection_failed">Image selection failed</string>
+
+
+    //Fragment Strings
+    <!--<string name="title_activity_dashboard">DashboardActivity</string>-->
+    <string name="title_fav">Favorites</string>
+    <string name="title_add_properties">Add Property</string>
+    <string name="title_my_properties">My Properties</string>
+    <string name="title_home">Dashboard</string>
+    <string name="title_profile">My Profile</string>
+    <string name="click_back_again_to_exit">Please click back again to exit.</string>
+    <string name="edit_profile"><u>Edit Profile</u></string>
+    <string name="lbl_test">test</string>
+
+    //Settings Activity
+    <string name="dark_mode">Dark Mode</string>
+    <string name="settings_activity">SETTINGS</string>
+
+    //About Us Activity
+    <string name="about_us_title">ABOUT US</string>
+    <string name="t_and_c_activity">Terms &amp; Conditions</string>
+    <string name="developer">Developer</string>
+
+
+    //Terms and Conditions Activity
+    <string name="t_c_activity_title">TERMS &amp; CONDITIONS</string>
+    <string name="both_ts_and_cs">Our app is completely free to use and does not require any additional software.
+        This app\'s content may contain connections and links to external websites. These outside information sources are uncontrollable.
+        Third-party sources contribute some of the information on this app. It is the user\'s obligation to make his or her own judgments
+        regarding the accuracy, reliability, and correctness of the material found.
+        It is critical that all users realize that we do not
+        offer or endorse third-party information, and your legal relationship is with the third-party.
+        Please be advised that third-party content has not necessarily been vetted.</string>
+    <string name="terms">
+        Our app is completely free to use and does not require any additional software.
+        This app\'s content may contain connections and links to external websites. These outside information sources are uncontrollable.
+        Third-party sources contribute some of the information on this app.</string>
+    <string name="conditions">
+        It is the user\'s obligation to make his or her own judgments
+        regarding the accuracy, reliability, and correctness of the material found
+        It is critical that all users realize that we do not
+        offer or endorse third-party information, and your legal relationship is with the third-party.
+        Please be advised that third-party content has not necessarily been vetted.</string>
+
+    //DeveloperInfo Activity
+    <string name="dev_info">DEVELOPER INFORMATION</string>
+
+    //My Info
+    <string name="name">Name: </string>
+    <string name="position">Post: </string>
+    <string name="email_pos">Email: </string>
+    <string name="Linked">LinkedIn: </string>
+    <string name="my_name">Ronald Chikusa</string>
+    <string name="post">Junior Mobile Application Developer</string>
+    <string name="email"><u>chikusaronald1@gmail.com</u></string>
+    <string name="LinkedIn"><a href="https://www.linkedin.com/in/ronald-chikusa-b208841a0/"><u>My LinkedIn Page</u></a></string>
+
+    //Profile
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="title_settings_pd">PROFILE</string>
+    <string name="title_edit_profile">EDIT  PROFILE</string>
+
+    //My Menus
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Add Property Page
+    <string name="add_rental_my_property">Add My Rental Property</string>
+    <string name="btn_lbl_submit">UPLOAD PROPERTY</string>
+    <string name="title_add_rental_property">ADD RENTAL PROPERTY</string>
+    <string name="edit_text_hint_property_title">Property Title</string>
+    <string name="edit_text_hint_product_price">Property Monthly Price (MWK/Month)</string>
+    <string name="edit_text_hint_property_district">District Location ie. Lilongwe</string>
+    <string name="edit_text_property_area_location">Area Location e.g Area 49</string>
+    <string name="edit_text_property_garage_number">Number of garages</string>
+    <string name="edit_text_property_bathrooms_number">Number of bathrooms</string>
+    <string name="edit_text_property_bedroom_number">Number of bedrooms</string>
+    <string name="et_hint_property_description">General Rental Property Description</string>
+    <string name="radio_button_label_not_furnished">Not Furnished</string>
+    <string name="radio_button_label_partial_furnished">Semi Furnished</string>
+    <string name="radio_button_label_fully_furnished">Fully Furnished</string>
+    <string name="et_hint_property_contact_number">Preferably WhatsApp No.</string>
+    <string name="add_image_2">Add Second Image</string>
+    <string name="add_images">Add More Images</string>
+
+    //Add Property Error Messages
+    <string name="error_msg_select_product_image">Please select property image</string>
+    <string name="error_msg_enter_property_title">Please enter property title</string>
+    <string name="error_msg_enter_property_price">Please enter property price (Per Month)</string>
+    <string name="err_msg_enter_general_property_description">"Please enter general property details "</string>
+    <string name="error_msg_property_district">Enter property district location</string>
+    <string name="error_msg_enter_property_area">Enter property area location</string>
+    <string name="error_msg_enter_property_garage">Enter number of garages</string>
+    <string name="error_msg_property_bathroom">Please enter number of bathrooms</string>
+    <string name="error_msg_enter_property_bedrooms">Please enter the number of bedrooms</string>
+    <string name="error_msg_enter_property_general_description">Please enter the property\'s general description. You may include as much information as you can</string>
+    <string name="error_msg_enter_property_contact">Please add a correct number(Preferably WhatsApp to ease communication with potential tenants)</string>
+    <string name="error_msg_select_second_property_image">Please add second property image</string>
+    <string name="error_msg_select_third_property_image">Please select third property image</string>
+    <string name="property_upload_success_message">"Your property was uploaded successfully "</string>
+
+    //Add Property Fragment RecyclerView
+    <string name="no_products_added_yet">You currently have no properties listed. To add a property click the "+" icon on the top right</string>
+    <string name="per_month"> / month</string>
+    <string name="no_properties_found">"No properties found "</string>
+
+    //Property Deletion
+    <string name="property_delete_success_message">Your property was deleted successfully</string>
+    <string name="delete_dialog_title">Delete</string>
+    <string name="delete_dialog_message">Are you sure you want to delete this property?</string>
+    <string name="yes">Yes</string>
+    <string name="ok">Ok</string>
+    <string name="no">No</string>
+    <string name="Bedrooms">Bedrooms</string>
+    <string name="Bath">Bath</string>
+    <string name="Garage">Garage</string>
+    <string name="demarcation"><b>|</b></string>
+    <string name="comma">,</string>
+
+    //Logout Dialog
+    <string name="logout_dialog_title">Logout</string>
+    <string name="you_sure_you_wanna_log_out">Are you sure you want to logout?</string>
+
+    //Instruction Page
+    <string name="instructions">HOW TO...</string>
+    <string name="how_to_edit_profile_title">EDIT PROFILE</string>
+    <string name="how_to_add_rental_property_title">ADD RENTAL PROPERTY</string>
+    <string name="how_to_delete_rental_property_title">DELETE RENTAL PROPERTY</string>
+    <string name="how_to_view_rental_property_title">VIEW RENTAL PROPERTY</string>
+    <string name="button_how_to_contact_property_owners">CONTACT PROPERTY OWNERS</string>
+
+    //Edit Profile Instructions
+    <string name="edit_user_instruction_title">HOW TO EDIT YOUR PROFILE</string>
+    <string name="first_step_edit_user_instruction">1.\tAfter Logging in, click the “My Profile” button on the bottom navigation</string>
+    <string name="second_step_edit_user_instruction">2.\tWhen on the “My Profile” page, tap on the top right icon</string>
+    <string name="third_step_edit_user_instruction">3.\tThis takes you to the “Profile Page”, where you can view all your details</string>
+    <string name="fourth_step_edit_user_instruction">4.\tTo edit your profile, click the “Edit” button on the right, which will navigate you to the “Edit Profile” page.</string>
+    <string name="fifth_step_edit_user_instruction">5.\tYou can then make changes to your profile details and click on the “SAVE” button</string>
+
+    //Add Property Instruction
+    <string name="add_property_instruction_title">HOW TO ADD YOUR PROPERTY</string>
+    <string name="first_step_add_prop_instruction">1.\tTo add your property to the app, click on the “Add Property” button on the bottom navigation</string>
+    <string name="second_step_add_prop_instruction">2.\tWhen on the “Add Property” page, click on the top right icon</string>
+    <string name="third_step_add_prop_instruction">3.\tYou will then be navigated to the “Add Rental Property” page</string>
+    <string name="fourth_step_add_prop_instruction">4.\tFill in all the details of your property and click “Upload Property”</string>
+    <string name="fifth_step_add_prop_instruction">5.\tThe property will then appear on the “My Properties” or ” Add Properties” page</string>
+    <string name="sixth_step_add_prop_instruction">6.\tWhen your property is uploaded, users will be able to view it and contact you if they are interested</string>
+
+    //Delete Property Instruction
+    <string name="delete_property_instruction_title">HOW TO DELETE MY PROPERTY</string>
+    <string name="first_step_del_prop_inst">1.\tTo delete your rental property, click on the “Add Property” button on the bottom navigation</string>
+    <string name="second_step_del_prop_inst">2.\tHere you will have a list of all the properties you have uploaded</string>
+    <string name="third_step_del_prop_inst">3.\tClick on the delete icon on the property you want to delete and then click yes on the confirmation dialog</string>
+    <string name="fourth_step_del_prop_inst">4.\tThe property will then be deleted from the entire application</string>
+
+    //View Rental Property Instruction
+    <string name="how_to_view_property_instruction_title">HOW TO VIEW RENTAL PROPERTIES</string>
+    <string name="first_step_view_prop_inst">1.\tTo view a property, simply tap on the desired property on the dashboard page</string>
+    <string name="second_step_view_prop_inst">2.\tYou will be redirected to the “Property Details” page, where you can take a look at more information about that particular property including the property owner’s details.</string>
+
+    //Contact Rental Property Owner Instruction
+    <string name="how_to_contact_property_owners_instruction_title">HOW TO CONTACT PROPERTY OWNERS</string>
+    <string name="first_step_contact_prop_owner_inst">1.\tTo contact a property owner, simply tap on the desired property on the dashboard page.</string>
+    <string name="second_step_contact_prop_owner_inst">2.\tYou will be redirected to the “Property Details” page, where you can simply scroll down and view the property owner’s contact details, which include WhatsApp, Email, SMS or you can simply give them a call.</string>
+
+    //Property Details
+    <string name="title_property_details">PROPERTY DETAILS</string>
+    <string name="lbl_property_description">PROPERTY DESCRIPTION</string>
+    <string name="lbl_property_details">OTHER PROPERTY DETAILS</string>
+    <string name="semi_colon"><b>:</b></string>
+    <string name="Furnishing">Furnishing:</string>
+    <string name="property_images">Property Images</string>
+    <string name="View_Image">View Images</string>
+    <string name="currency_sign">K</string>
+    <string name="lbl_property_owner_details">PROPERTY OWNER DETAILS</string>
+    <string name="button_label_whatsapp">WhatsApp</string>
+    <string name="button_label_call">CALL</string>
+    <string name="name_property_owner">Name:</string>
+    <string name="Garages">Garage(s):</string>
+    <string name="lbl_property_images">PROPERTY IMAGES</string>
+    <string name="title_my_property_rental_property">MY PROPERTY DETAILS</string>
+    <string name="Contact">Contact:</string>
+    <string name="actual_per_month">Per month</string>
+    <string name="error_msg_enter_correct_mobile_number">Please enter correct mobile number</string>
+    <string name="real_estate_agencies">REAL ESTATE AGENCIES</string>
+
+    //Real Estate Agencies
+    <string name="feature_agencies">If you would like to be featured as an agency please email us at: </string>
+    <string name="email_my_app"><u>ratedrentalsmalawi@gmail.com</u></string>
+
+    //More On Property Details
+    <string name="enter_email_address_optional">Enter email address(Optional)</string>
+    <string name="enter_contact_hours_time_frame">Enter your available time frame for calls</string>
+    <string name="email_property_owner">Email:</string>
+    <string name="contact_time_frame">Contact Time Frame:</string>
+    <string name="Email">Email:</string>
+    <string name="error_msg_enter_property_contact_hours">Please enter a time frame you are comfortable to have potential clients call you in regards to this property</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="Bedroom">Bedroom(s):</string>
+    <string name="Bathroom">Bathroom(s):</string>
+    <string name="property_id">Property ID:</string>
+    <string name="how_to_refresh_page_title">REFRESH PAGE</string>
+    <string name="how_to_refresh_page_act_title">HOW TO REFRESH A PAGE</string>
+    <string name="refresh">1.\tTo refresh a page, simply click on the navigation icon that you are currently in. For example, if you are in the dashboard and images are not loading click a property and return to the dashboard to trigger a reload. Else, click the dashboard icon at the bottom. This applies to other pages.</string>
+    <string name="tl_dr"> TLDR: Re-enter pages to trigger reloads</string>
+
+
+</resources>

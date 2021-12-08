@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mw.technologies3g.ratedrentalsmalawi">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    //TODO-- PUT METADATA BACK
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/final_rated_rentals_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/final_rated_rentals_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RatedRentalsMalawi">
+
+
+
+        <activity
+            android:name=".activities.ui.activities.RefreshPageInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar"/>
+
+        <activity
+            android:name=".activities.ui.activities.OnBoardingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar"/>
+        <activity
+            android:name=".activities.ui.activities.RealEstateAgencyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.MyPropertyDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.PropertyDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.ContactRentalPropertyOwnersInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.ViewRentalPropertyInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.DeleteRentalPropertyInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.AddRentalPropertyInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.InstructionsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.EditUserProfileInstructionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.AddRentalPropertyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.ViewUserProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.DevelopersInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.TermsAndConditionsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.AboutUsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.DashboardActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.ui.activities.UserProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.ForgotPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ui.activities.RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar" />
+        <activity
+            android:name=".activities.ui.activities.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RatedRentalsMalawi.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ui.activities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
