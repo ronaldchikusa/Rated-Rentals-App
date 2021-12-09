@@ -5,7 +5,7 @@ around the country especially under short notice. Being a fresh computer science
 for Malawians to be able to look for rental properties with ease and to advertise their rental properties all for free. 
 
 Rated Rentals is a mobile application that provides a platform for Malawians who are looking for rental properties to find their desired homes. 
-The property listing includes the property details include the owner’s contact details. 
+The property listing includes the property details and the owner’s contact details. 
      
 ## Tech/framework used
 
