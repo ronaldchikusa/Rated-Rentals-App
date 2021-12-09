@@ -22,7 +22,9 @@ Built with
 -	The app allows you to contact the owner directly through WhatsApp or through a phone call.
 
 ## Code Example
-Function to delete a property from the Firebase Firestore collection of properties 
+Function to delete a property from the Firebase Firestore collection of properties. 
+![image](https://user-images.githubusercontent.com/70677199/145333748-a0897679-d576-4525-bf81-743ab69c0cd2.png)
+
  
 ## Installation
 -The application is currently under review by Google to be published on Google Play 
