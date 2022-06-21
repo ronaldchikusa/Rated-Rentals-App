@@ -27,7 +27,7 @@ Function to delete a property from the Firebase Firestore collection of properti
 
  
 ## Installation
--The application is currently under review by Google to be published on Google Play 
+-The application has been successfully published on Google Play 
 
 ## Screenshots
 ![rated_rentals_icon](https://user-images.githubusercontent.com/70677199/145204451-784d549d-a7e1-4c02-8a45-647b9b49ab9c.png)
